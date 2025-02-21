@@ -1,0 +1,124 @@
+
+   <!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>KOREPETYTOR MAKSIM BOBILEVICH</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="script.js" defer></script>
+    <style>
+        /* Add your CSS styles here */
+        .page {
+            display: none;
+        }
+        .page.active {
+            display: block;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>KOREPETYTOR MAKSIM BOBILEVICH</h1>
+        <p>Witamy na mojej stronie internetowej! Tutaj nauczę Cię fizyki i matematyki w krótkim czasie</p>
+    </header>
+
+    <nav>
+        <a href="#" onclick="showPage('mainPage')">Strona Główna</a>
+        <a href="#" onclick="showPage('Page1')">Matematyka</a>
+        <a href="#" onclick="showPage('Page2')">Fizyka</a>
+        <a href="#" onclick="showPage('Page3')">Zadania</a>
+        <a href="#" onclick="showPage('Page4')">Zapisz się</a>
+    </nav>
+
+    <div class="container">
+        <div id="mainPage" class="page active">
+            <h2 style="margin-bottom: 50px;">STRONA GŁÓWNA</h2>
+            <p>Cieszę się, że widzę Cię na mojej stronie!</p>
+            <p style="margin-bottom: 40px;">Nazywam się Maksim Bobilevich. Jestem absolwentem Politechniki Warszawskiej na kierunku Inżynieria Lotnicza i Kosmiczna. Od 2021 roku prowadzę szkolenia dla uczniów i studentów. </p>
+            <p>  <span style="font-family: Arial, sans-serif; color: darkblue;">UCZĘ</span> </p>
+            <li style="margin-bottom: 10px;"> Szkoła: pomoc w nauce / nauka nowego materiału / przygotowanie do egzaminów (matematyka, fizyka)</li>
+            <li style="margin-bottom: 10px;"> Liceum: pomoc w nauce / przygotowanie do maruty (matematyka, fizyka)</li>
+            <li style="margin-bottom: 40px;"> Uniwersytet: pomoc w nauce / przygotowanie do egzaminów i sesji / rysunki (matematyka, fizyka, grafika inżynierska, mechanika płynów, aerodynamika)</li>     
+
+            <p>  <span style="font-family: Arial, sans-serif; color: darkblue;">MOJE CV</span> </p> 
+            <p style="margin-bottom: 20px;">  <span style="color: darkred;">PS: Lekcja próbna jest całkowicie bezpłatna! Kliknij link: "Zapisz się"</span> </p>
+            <object data="CV.pdf" type="application/pdf" width="100%" height="600px">
+    <p>Przepraszamy, Twoja przeglądarka nie obsługuje plików PDF. <a href="CV.pdf">Pobierz plik PDF</a> zamiast tego.</p>
+</object>
+
+<br><br>
+            <img src="myphoto.jpg" alt="me" class="photo">
+        </div>
+
+        <div id="Page1" class="page active">
+            <h2>MATEMATYKA</h2>
+            <p> Service </p>
+        </div>
+
+
+        <div id="Page2" class="page active">
+            <h2>FIZYKA</h2>
+        <p> Service </p>
+        </div>
+
+
+
+
+        <div id="Page3" class="page">
+            <h2>ZADANIA</h2>
+            <p> Service </p>
+            <nav>
+                <ul>
+                    <li><a href="#" onclick="showSubPage('mats')">Matematyka: szkoła</a></li>
+                    <li><a href="#" onclick="showSubPage('matl')">Matematyka: liceum</a></li>
+                    <li><a href="#" onclick="showSubPage('matm')">Matematyka: matura</a></li>
+                    <li><a href="#" onclick="showSubPage('fizs')">Fizyka: szkoła</a></li>
+                    <li><a href="#" onclick="showSubPage('fizl')">Fizyka: liceum</a></li>
+                    <li><a href="#" onclick="showSubPage('fizm')">Fizyka: matura</a></li>
+                </ul>
+            </nav>
+        </div>
+
+          
+        <div id="Page4" class="page">
+            <h2>ZAPISZ SIĘ</h2>
+            <p> Service </p>
+        </div>
+
+
+
+    <footer>
+        <p>&copy; 2025 KOREPETYTOR MAKSIM BOBILEVICH. Wszelkie prawa zastrzeżone.</p>
+    </footer>
+
+    <script>
+        // JavaScript functions to show/hide pages
+        function showPage(pageId) {
+            // Hide all pages
+            var pages = document.querySelectorAll('.page');
+            for (var i = 0; i < pages.length; i++) {
+                pages[i].classList.remove('active');
+            }
+            // Show the selected page
+            var pageToShow = document.getElementById(pageId);
+            if (pageToShow) {
+                pageToShow.classList.add('active');
+            }
+        }
+
+        function showSubPage(subPageId) {
+            // Hide all sub pages within Page1
+            var subPages = document.querySelectorAll('#Page1 .page');
+            for (var i = 0; i < subPages.length; i++) {
+                subPages[i].style.display = 'none';
+            }
+            // Show the selected sub page
+            var subPageToShow = document.getElementById(subPageId);
+            if (subPageToShow) {
+                subPageToShow.style.display = 'block';
+            }
+        }
+    </script>
+</body>
+</html>

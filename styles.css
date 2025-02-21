@@ -1,0 +1,81 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    text-align: center;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background: #0A3D62; /* Dark blue */
+    color: white;
+    padding: 20px;
+    font-size: 1.5em;
+    line-height: 1.4; /* Adjust this value for more or less spacing */
+    text-align: center;
+}
+
+nav {
+    background: #333;
+    padding: 10px;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    margin: 0 15px;
+    font-size: 0.9em;
+    line-height: 2.4; /* Adjust this value for more or less spacing */
+}
+
+nav a:hover {
+    text-decoration: underline;
+}
+
+.container {
+    max-width: 800px;
+    margin: 20px auto;
+    padding: 20px;
+    background: white;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+img {
+     width: 100%;
+    max-width: 300px;
+    display: block;
+    margin: 0 auto 20px auto;
+    border-radius: 50%;
+}
+
+
+<style>
+    /* CSS for menu-mechanics links */
+    .menu-mechanics {
+        list-style-type: none; /* Remove default list styling */
+        padding: 0; /* Remove default padding */
+    }
+    .menu-mechanics li {
+        margin-bottom: 2px; /* Adjust spacing between list items */
+    }
+    .menu-mechanics li a {
+        display: block;
+        font-size: 12px; /* Decrease font size */
+        color: #b0bec5; /* Change text color */
+        text-decoration: none; /* Remove underline */
+        padding: 3px; /* Add padding for better click area */
+    }
+    .menu-mechanics li a:hover {
+        background-color: #f0f0f0; /* Change background color on hover */
+    }
+</style>
+
+
+footer {
+    background: #0A3D62; /* Dark blue */
+    color: white;
+    padding: 10px;
+}
+
+
